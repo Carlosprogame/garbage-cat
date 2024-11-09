@@ -157,7 +157,7 @@ function startLevel () {
         tiles.setTileAt(value, assets.tile`tile0`)
     }
     scene.cameraFollowSprite(Hops_and_Paw)
-    info.setLife(5)
+    info.setLife(3)
     for (let value2 of sprites.allOfKind(SpriteKind.Enemy)) {
         value2.destroy()
     }
@@ -434,12 +434,15 @@ startLevel()
 let tempoRestante = 180
 info.setLife(3)
 if (current_level == 0) {
-    tiles.setTilemap(tilemap`level`)
+	
 } else if (current_level == 1) {
+    info.setLife(3)
     tiles.setTilemap(tilemap`level_0`)
 } else if (current_level == 2) {
+    info.setLife(3)
     tiles.setTilemap(tilemap`level_1`)
 } else if (current_level == 3) {
+    info.setLife(3)
     tiles.setTilemap(tilemap`level1`)
 } else if (current_level == 7) {
 	
